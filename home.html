@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Events</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+<h1>Transportation Events</h1>
+<form action="/searchbyperson">
+  <input name="person_id">
+  <button>Search By Person</button>
+</form>
+
+<form action="/searchbylink">
+  <input name="link_id">
+  <button>Search By LinkID</button> 
+</form>
+
+<form action="/linkdetails">
+  <input name="link_id">
+  <button>Get Some Details</button> 
+</form>
+
+<form action="/timerange" method="get">
+  <label for="link_id">Link ID:</label>
+  <input type="text" name="link_id" required>
+  <br>
+  <label for="start_time">Start Time:</label>
+  <input type="time" name="start_time" required>
+  <br>
+  <label for="end_time">End Time:</label>
+  <input type="time" name="end_time" required>
+  <br>
+  <button type="submit">Search Events Within Certain Time</button>
+</form> 
+</body>
+</html>
